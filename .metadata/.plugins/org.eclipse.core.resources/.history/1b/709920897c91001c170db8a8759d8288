@@ -1,0 +1,19 @@
+/* Program   : Solution4.java (Soal4) 
+ * Deskripsi : 
+ * Nama      : Regi Purnama
+ * Tanggal   : Jum'at, 19/02/2022
+ */
+import java.util.*; 
+
+public class Solution4 {
+
+	public static void main(String[] args) {
+		Scanner jumlahBarang = new Scanner(System.in);	
+		int n=jumlahBarang.nextInt();
+		int gajiPokok=500000;
+		int gajiTotal1=(gajiPokok)-((gajiPokok*15)/100);
+		
+		System.out.println(gajiTotal1);
+	}
+
+}

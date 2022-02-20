@@ -1,0 +1,40 @@
+/* Program   : Solution3.java (Soal3) 
+ * Deskripsi : 5 operator matematika
+ * Nama      : Regi Purnama
+ * Tanggal   : Jum'at, 19/02/2022
+ */
+
+import java.util.Scanner;	
+
+public class Solution3 {
+	public static void main(String args[]) {
+		try (Scanner input = new Scanner(System.in)){
+			int result = 0;		//variable result akan menampunng hasil operator
+			int A = input.nextInt();
+			String operator = input.next();
+			int B = input.nextInt();
+			
+			//Percabangan untuk menentukan operator
+			switch (operator) {
+			case("+"):	//Operator penjumlahan
+				result = A+B;
+				break;
+			case("-"):	//Operator pengurangan
+				result = A-B;
+				break;
+			case("*"):	//Operator perkalian
+				result = A*B;
+				break;
+			case("/"):	//Operator pembagian
+				result = A/B;
+				break;
+			case("%"):	//Operator sisa hasil bagi
+				result = A%B;
+				break;
+			}
+			System.out.printf("%d", result);	//Menampilkan output hasil
+		}catch (Exception e) {
+			System.out.println("Something error!!!");
+		}
+	}
+}

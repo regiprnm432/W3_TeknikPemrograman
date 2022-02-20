@@ -1,0 +1,30 @@
+/* Program   : Solution5.java (Soal5) 
+ * Deskripsi : Membuka tutup jalan
+ * Nama      : Regi Purnama
+ * Tanggal   : Jum'at, 19/02/2022
+ */
+
+import java.util.Scanner;	
+
+public class Solution5 {
+
+	public static void main(String[] args) {
+		   Scanner input = new Scanner(System.in);
+		   long number = 0L;	/*Variable bertipe long yang akan menampung inputan platMobil
+		   						setelah dihilangkan spasinya*/
+		   String platMobil =  input.nextLine().replaceAll("\\s", "");	//Menghilangkan spasi pada inputan
+		   number = Long.parseLong(platMobil);
+		   input.close();	//Digunakan untuk menutup koneksi input stream
+		   
+		   int hasil;
+		   hasil = (int) ((number - 999999)/5);	//Operasi untuk menentukan mobil jalan atau berhenti
+		   
+		   if(hasil == 0) {
+			   System.out.println("berhenti");	//Akan ditampilkan ketika hasilnya 0
+		   } else {
+			   System.out.println("jalan");		//Akan ditampilkan ketika hasilnya bukan nol
+		   }
+	}
+
+}
+

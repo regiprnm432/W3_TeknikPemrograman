@@ -1,0 +1,25 @@
+/**
+ * Program untuk menghitung jumlah kata dalam suatu kalimat yang diinputkan pengguna
+ * @author Regi Purnama
+ * @version 1
+ * @since 19/02/2022
+ */
+
+import java.util.*;	
+
+public class Solution1 {
+
+    public static void main(String[] args) {
+    	Scanner input = new Scanner(System.in); //Untuk melakukan scan data inputan
+		String sentence = input.nextLine();  
+		
+		String[] word = sentence.trim().split("[!,?._'@\\ ]"); //memisahkan kata dan simbol
+		int wordCount = word.length; 
+		System.out.println(wordCount); //menampilkan nilai dari variabel jumlahKata
+		
+		for(int i = 0; i < wordCount; i++) { //Looping untuk menampilkan kata
+			System.out.println(word[i]); //menampikan kata satu persatu
+		}
+		input.close(); //Digunakan untuk menutup koneksi input stream
+    }
+}

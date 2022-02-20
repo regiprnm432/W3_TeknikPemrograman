@@ -1,0 +1,23 @@
+/* Program   : Solution1.java (Soal1) 
+ * Deskripsi : Menghitung jumlah kata pada kalimat
+ * Nama      : Regi Purnama
+ * Tanggal   : Jum'at, 19/02/2022
+ */
+
+import java.util.*;	
+import java.util.stream.Collectors;
+
+public class Solution1 {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        String s = scan.nextLine();
+        scan.close();	//Digunakan untuk menutup koneksi input stream
+        
+        String splits[] = s.split("[!,?._'@ ]");
+    	splits = Arrays.asList(splits).stream().filter(str -> !str.isEmpty()).collect(Collectors.toList()).toArray(new String[0]);
+    	System.out.println(splits.length);
+    	for(String z : splits)
+    		System.out.println(z);
+    }
+}

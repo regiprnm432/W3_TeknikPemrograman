@@ -1,0 +1,30 @@
+/* Program   : Solution4.java (Soal4) 
+ * Deskripsi : Menghitung gaji Agent
+ * Nama      : Regi Purnama
+ * Tanggal   : Jum'at, 19/02/2022
+ */
+import java.util.*; 
+
+public class Solution4 {
+
+	public static void main(String[] args) {
+		Scanner input=new Scanner(System.in);
+		int jumlahBarang=input.nextInt();
+		final int gajiPokok=500000;		//gajiPokok berperan menjadi konstanta
+		final int hargaBarang=50000;
+		int totalGaji = 0;
+		
+		
+		if(jumlahBarang >= 40) {	//Bonus 25% untuk penjualan >= 40
+			totalGaji = (int) (gajiPokok + ((jumlahBarang*hargaBarang)*0.25));
+		} else if(jumlahBarang > 80) {	//Bonus 35% untuk penjualan > 80
+			totalGaji = (int) (gajiPokok + ((jumlahBarang*hargaBarang)*0.35));
+		} else if(jumlahBarang < 15) {	//Gaji akan dikurangi 15% ketika penjualan < 15
+			totalGaji =(int) (gajiPokok - (((15 - jumlahBarang)*hargaBarang)*0.15));
+		} else {	//Bonus 10% setiap Barangnya
+			totalGaji = (int) (gajiPokok + ((jumlahBarang*hargaBarang)*0.10));
+		}
+		System.out.println(totalGaji);
+		input.close();
+	}
+}

@@ -1,0 +1,20 @@
+/* Program   : Solution3.java (Soal3) 
+ * Deskripsi : 
+ * Nama      : Regi Purnama
+ * Tanggal   : Jum'at, 19/02/2022
+ */
+import java.util.Scanner;
+
+public class Solution3 {
+
+	public static void main(String[] args) {
+		   Scanner input = new Scanner(System.in);
+	       String mobil;
+	       mobil = input.nextLine();
+	       mobil.close();
+	       
+	       System.out.println(mobil)
+	}
+
+}
+

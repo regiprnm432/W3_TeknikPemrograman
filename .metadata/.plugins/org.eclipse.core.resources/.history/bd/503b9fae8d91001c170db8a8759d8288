@@ -1,0 +1,21 @@
+/* Program   : Solution5.java (Soal5) 
+ * Deskripsi : 
+ * Nama      : Regi Purnama
+ * Tanggal   : Jum'at, 19/02/2022
+ */
+
+import java.util.Scanner;
+
+public class Solution5 {
+
+	public static void main(String[] args) {
+		   Scanner input = new Scanner(System.in);
+	       String mobil;
+	       mobil = input.nextLine();
+	       input.close();
+	       
+	       System.out.println(mobil);
+	}
+
+}
+

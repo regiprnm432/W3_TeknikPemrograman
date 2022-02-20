@@ -1,0 +1,24 @@
+/* Program   : Solution4.java (Soal4) 
+ * Deskripsi : 
+ * Nama      : Regi Purnama
+ * Tanggal   : Jum'at, 19/02/2022
+ */
+import java.util.*; 
+
+public class Solution4 {
+
+	public static void main(String[] args) {
+		Scanner input=new Scanner(System.in);
+		int n=input.nextInt();
+		final int gajiPokok=500000;
+		
+		if(n <= 15) {
+			System.out.println((gajiPokok)-((gajiPokok*15)/100));
+		} else if(n >= 40 && n < 80) {
+			System.out.println((gajiPokok)+((gajiPokok*25)/100));
+		} else if(n >= 80) {
+			System.out.println((gajiPokok)+((gajiPokok*35)/100));
+		}
+		input.close();
+	}
+}

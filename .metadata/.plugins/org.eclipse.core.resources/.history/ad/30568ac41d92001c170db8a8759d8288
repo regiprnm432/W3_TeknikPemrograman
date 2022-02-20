@@ -1,0 +1,23 @@
+/* Program   : Solution1.java (Soal1) 
+ * Deskripsi : Menghitung jumlah kata pada kalimat
+ * Nama      : Regi Purnama
+ * Tanggal   : Jum'at, 19/02/2022
+ */
+
+import java.util.*;	
+
+public class Solution1 {
+
+    public static void main(String[] args) {
+    	Scanner input = new Scanner(System.in); //membaca data dari perangkat masukan
+		String sentence = input.nextLine();  //data dari perangkat masukan dimasukkan ke kalimat (string)
+		
+		String[] word  = sentence.trim().split("[!,?._'@\\ ]"); //memisahkan kalimat menjadi kata perkata berdasarkan simbol tertentu
+		int count = word.length; //memasukan nilai untuk variabel jumlahKata berdasakan jumlah kata dari kalimat
+		System.out.println(count); //menampilkan nilai dari variabel jumlahKata
+		for(int i = 0; i < count ; i++) { //proses repetition untuk menampilkan kata perkata sebanyak jumlahKata
+			System.out.println(word[i]); //menampikan kata ke 1 sampai kata terakhir
+		}
+		input.close();
+    }
+}

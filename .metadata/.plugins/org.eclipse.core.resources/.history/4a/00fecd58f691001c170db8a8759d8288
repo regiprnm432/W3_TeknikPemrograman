@@ -1,0 +1,17 @@
+/* Program   : Solution3.java (Soal3) 
+ * Deskripsi : 
+ * Nama      : Regi Purnama
+ * Tanggal   : Jum'at, 19/02/2022
+ */
+
+import java.util.Scanner;
+
+public class Solution3 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		String operasi =  input.nextLine().replaceAll("\\s", "");
+		input.close();
+		System.out.println(operasi);
+	}
+}

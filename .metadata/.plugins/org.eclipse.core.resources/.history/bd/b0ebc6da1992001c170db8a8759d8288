@@ -1,0 +1,21 @@
+/* Program   : Solution6.java (Soal6) 
+ * Deskripsi : Penjumlahan dan perkalian dua bilangan
+ * Nama      : Regi Purnama
+ * Tanggal   : Jum'at, 19/02/2022
+ */
+
+import java.math.*;
+import java.util.Scanner;	
+
+public class Solution6 {
+   public static void main(String []args){
+       Scanner input = new Scanner(System.in);
+       String s1,s2;
+       s1=input.nextLine();
+       s2=input.nextLine();
+       input.close();	//Digunakan untuk menutup koneksi input stream
+       
+       System.out.println(new BigInteger(s1).add(new BigInteger(s2)));	//Menampilkan penjumlahan dua bilangan
+       System.out.println(new BigInteger(s1).multiply(new BigInteger(s2)));	//Menampilkan perkalian dua bilangan
+   }
+}
